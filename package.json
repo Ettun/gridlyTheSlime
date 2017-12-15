@@ -1,0 +1,16 @@
+{
+  "name": "grid.demo",
+  "version": "1.0.0",
+  "description": "CSS Grid Demo",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.0.0-beta.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "watch": "node scripts/build.js"
+  },
+  "author": "adodwell",
+  "license": "ISC"
+}

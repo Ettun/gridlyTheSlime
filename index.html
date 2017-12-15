@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script type="text/javascript" src="scripts/base.js"></script>
+    <script type="text/javascript" src="scripts/choices.js"></script>    
+</head>
+
+<body>
+    <div class="gameSlide intro" data-group="group1">
+        <article class="gridly"><i class="smile"></i></article>                            
+    </div>
+    <div class="gameSlide" data-group="group2">
+        <div class="choiceContainer" id="choiceContainer">
+            <article onclick="selectChoice('0')"><div class="choiceTitle">A:</div><div></div></article>
+            <article onclick="selectChoice('1')"><div class="choiceTitle">B:</div><div></div></article>
+            <article onclick="selectChoice('2')"><div class="choiceTitle">C:</div><div></div></article>
+            <article onclick="selectChoice('3')"><div class="choiceTitle">D:</div><div></div></article>
+        </div>
+        <section class="grids">
+            <div class="gridContainer" id="topGrid">
+                <article id="gridly" class="gridly">
+                    <i class="smile"></i>
+                </article>
+            </div>
+            <div class="gridContainer" id="bottomGrid">
+                <article class="a">
+                    <i></i>
+                </article>
+                <article class="b">
+                    <i></i>
+                </article>
+                <article class="c">
+                    <i></i>
+                </article>
+                <article class="d">
+                    <i></i>
+                </article>
+                <article class="e">
+                    <i></i>
+                </article>
+                <article class="f">
+                    <i></i>
+                </article>
+                <article class="g">
+                    <i></i>
+                </article>
+                <article class="h">
+                    <i></i>
+                </article>
+                <article class="i">
+                    <i></i>
+                </article>
+                <article class="j">
+                    <i></i>
+                </article>
+                <article class="k">
+                    <i></i>
+                </article>
+                <article class="l">
+                    <i></i>
+                </article>
+                <article class="n">
+                    <i></i>
+                </article>
+                <article class="m">
+                    <i></i>
+                </article>
+                <article class="o">
+                    <i></i>
+                </article>
+                <article class="p">
+                    <i></i>
+                </article>
+            </div>
+        </section>
+        <div class="cssBox">
+            <div id="gridMap"></div>
+            <div class="attrList">
+                <div>{</div>
+                <div class="indent">grid-row-start:
+                    <div id="grid-row-start" class='editDiv' onkeydown="event.stopPropagation()" oninput="styleUpdate(event, 'grid-row-start')"
+                        contentEditable>1</div>;</div>
+                <div class="indent">grid-column-start:
+                    <div id="grid-column-start" class='editDiv' onkeydown="event.stopPropagation()" oninput="styleUpdate(event, 'grid-column-start')"
+                        contentEditable>1</div>;</div>
+                <div class="indent">grid-row-end:
+                    <div id="grid-row-end" class='editDiv' onkeydown="event.stopPropagation()" oninput="styleUpdate(event, 'grid-row-end')" contentEditable>1</div>;</div>
+                
+                <div class="indent">grid-column-end:
+                    <div id="grid-column-end" class='editDiv' onkeydown="event.stopPropagation()" oninput="styleUpdate(event, 'grid-column-end')"
+                        contentEditable>1</div>;</div>
+                <div>}</div>
+            </div>
+            <button onclick="onResetClick()">Reset</button>
+            <div id="roadmap">
+                <h2>North/South Tracks:</h2><div>w, x, y, z.</div>
+                <h2>West/East Tracks:</h2><div>a, b, c, d.</div>
+            </div>
+            <div id="heartbox">
+                <i class="heart"></i>
+                <i class="heart"></i>
+                <i class="heart"></i>
+                <i class="heart"></i>                
+            </div>
+        </div>
+    </div>
+    <div class="gameSlide intro" data-group="group3">
+        <article class="gridly"><i class="smile"></i></article>  
+        <h2 id="endTitle">Victory!</h2>                                  
+    </div>
+</body>
+
+</html>
